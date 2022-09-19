@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    
+    
+    <title>¿QUIÉNES SOMOS?</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar">
+        
+        <img src="/src/Logo-text.png"  alt="Logo" class="navbar__logo">
+       
+
+       <div class="navbar__toggle" id="mobile-menu">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+       </div>
+
+       <div class="navbar__menu">
+        <a href="/index.html" class="navbar__link">INICIO</a>
+        <a href="/QuienesSomos.html" class="navbar__link"><span>¿QUIÉNES SOMOS?</span></a>
+        <a href="/servicios.html" class="navbar__link">SERVICIOS</a>
+        <a href="https://www.alvarezsegurostodoagro.com.uy#contact_anchor" class="navbar__link">CONTACTO</a>
+        </div>
+
+     </nav>
+
+  
+   <!-- HEADER -->
+
+   <section class="header_section">
+    <div class="header__img">
+        <img src="/src/AboutUs.jpg" alt="about_us_image"> 
+    </div>
+    <div class="header__info">
+        <div class="header__h1">    
+            <h1>¿QUIÉNES SOMOS?</h1>
+        </div>
+    </div>
+</section>
+  
+  
+    <!-- About us -->
+ 
+ <section class="aboutUs_Container">
+   
+    <div class="aboutUsText">
+        <p>Somos una empresa de seguros con casi 20 años que respaldan nuestro trabajo. <span><br>ALVAREZ SEGUROS</span> surgió por la necesidad de brindar soluciones y asesoramiento principalmente al sector agropecuario en todas sus ramas generales de coberturas según su dinámica empresarialDesde nuestra empresa diseñamos y adecuamos los seguros para cubrir sus necesidades, además de brindarles la tranquilidad que están buscando nuestros clientes.</p>
+    </div>
+       
+ </section>
+
+    <!-- Mision, valor -->
+ 
+    <section class="mision_Container">
+   
+        <div class="misionText">
+            <h3 class="misionTitle">Misión</h3>
+            <p>Somos una empresa de seguros integrales, comprometida con nuestros clientes en brindarles servicio y asesoría de calidad, garantizando el cuidado de su patrimonio.</p>
+        </div>
+        <div class="misionText">
+            <h3 class="misionTitle">Visión</h3>
+            <p>Ser una empresa eficiente, con proyección de crecimiento sostenible y logrando cubrir las necesidades de nuestros clientes. </p>
+        </div>
+        <div class="misionText">
+            <h3 class="misionTitle">Valores</h3>
+            <p>Nos destacamos por ser honestos y fieles a nuestros valores.
+                Creemos en nuestro equipo de trabajo, en su seriedad y superación continua. Nos importan nuestros clientes</p>
+        </div>
+           
+     </section>
+     
+ 
+   <!-- Contactanos-->
+ 
+ 
+   <div class="container-footer">
+        
+    <div class="form">
+                        
+
+        <div class="contact-form">
+        
+            <form onsubmit="sendEmail(); reset(); return false; ">
+                <h3 class="title__contact">CONTACTANOS</h3>
+                
+                <div class="input-container focus">
+                    <input type="text" id="name" class="input" placeholder="Nombre" required>
+                </div>   
+                    
+                <div class="input-container">
+                    <input type="email" id="email" class="input" placeholder="Mail" required>
+                </div>   
+                
+                <div class="input-container">
+                    <input type="tel" id="phone" class="input" placeholder="Teléfono" required>
+                </div>   
+            
+                <div class="input-container textarea">
+                    <textarea id="message" class="input" placeholder="Mensaje" required></textarea>
+                </div>   
+                
+                <input type="submit" value="Enviar" class="btn-enviar">
+                    
+            </form> 
+                    
+        </div>
+              
+        <div class="contact-info"> 
+
+           <div class="phone_contact">
+               <img src="src/Icons/PhIncon.svg" alt="Phone Icon">
+               <a href="tel:+59845330613" target="_blank">4533 0613</a>
+               <a href="tel:+59898598266" target="_blank"><span>098598266</span> </a>
+               <a href="tel:+59898769693" target="_blank">098769693</a>
+           </div>
+
+           <div class="mail_contact">
+               <img src="src/Icons/MailIncon.svg" alt="Mail Icon">
+               <a href="mailto:administracion@alvarezsegurostodoagro.com.uy" target="_blank">administracion@alvarezsegurostodoagro.com.uy</a>
+               
+           </div>
+
+           <div class="address_contact">
+               <img src="src/Icons/LocationIcon.svg" alt="Location Icon">
+               <a href="https://www.google.com/maps/dir/-34.9088374,-56.1700368/Alvarez+Seguros/@-34.077306,-58.2198159,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x95a53f506df96515:0xcc123a8f5c96174c!2m2!1d-58.0289232!2d-33.2565656" class="adress" target="_blank">Colón 686 Mercedes - Soriano - Uruguay</a>
+           </div>
+               
+        </div>
+            
+    </div>
+</div>
+
+ 
+  <!-- FOOTER-->
+  <footer class="footer">
+      <div class="footerimage">       
+     <img src="/src/Logo-text.png" alt="Logo" class="footer__logo">
+     </div>
+ </footer>
+ 
+  
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+ <script>
+     function sendEmail(){
+        Email.send({
+                    Host : "mail.alvarezsegurostodoagro.com.uy",
+                    Username : "administracion@alvarezsegurostodoagro.com",
+                    Password : "^PzwTS&nYK=M",
+                    To : 'administracion@alvarezsegurostodoagro.com',
+                    From : document.getElementById("email").value,
+                    Subject : "Nuevo formulario web",
+                    Body : "Nombre: " + document.getElementById("name").value 
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Teléfono :" + document.getElementById("phone").value
+                    + "<br> Mensaje: " + document.getElementById("message").value
+                }).then(
+                message => alert("¡Mensaje enviado!")
+                );
+     }
+ </script>
+
+<script src="/app.js"></script>
+</body>
+</html>
